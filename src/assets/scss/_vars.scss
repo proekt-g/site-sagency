@@ -1,0 +1,10 @@
+$default-font: 'Muli';
+$content-width: 1140px;
+$heightHeader: 180px;
+$heightFooter: 240px;
+$minHeightMain: calc(100vh - (#{$heightHeader} + #{$heightFooter}));
+$mainColor: #a9afc3;
+body {
+    --site-color: #dd4242;
+    --title-color: #ffffff;
+}

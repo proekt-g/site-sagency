@@ -1,0 +1,21 @@
+.header {
+    position: absolute;
+    padding: 0 71px;
+    height: 180px;
+    width: 100%;
+    display: flex;
+    z-index: 1;
+    &__inner {
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__phone {
+        color: var(--title-color);
+        transition: .3s;
+        &:hover {
+            color: var(--site-color);
+        }
+    }
+}
