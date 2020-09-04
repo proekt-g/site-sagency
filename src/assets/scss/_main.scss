@@ -11,20 +11,28 @@
             font-size: 120px;
             font-weight: 700;
             line-height: 120px;
-            &-word {
-                position: relative;
-                line-height: 90px;
+            // display: inline-block;
+        }
+        &__word {
+            color: var(--title-color);
+            font-family: 'Poppins';
+            font-size: 120px;
+            font-weight: 700;
+            position: relative;
+            line-height: 90px;
+            display: none;
+            &--visibility {
                 display: inline-block;
-                &::after {
-                    content: '';
-                    position: absolute;
-                    width: 20px;
-                    height: 20px;
-                    background-color: var(--site-color);
-                    border-radius: 50%;
-                    bottom: 0;
-                    right: -25px;
-                }
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background-color: var(--site-color);
+                border-radius: 50%;
+                bottom: 0;
+                right: -25px;
             }
         }
         &__subtitle {

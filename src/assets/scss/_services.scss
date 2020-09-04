@@ -1,0 +1,119 @@
+.services {
+    background-color: var(--background-color);
+    .customers {
+        position: relative;
+        margin-top: 70px;
+        padding-bottom: 55px;
+        background-image: url(../images/bg-services.svg);
+        background-repeat: no-repeat;
+        background-position: right calc(100% - 65px);
+        &__number {
+            top: 60px;
+        }
+        &__t {
+            max-width: 785px;
+            margin: 20px 0 40px;
+        }
+        &__text {
+            line-height: 30.6px;
+        }
+        &__block {
+            display: flex;
+            width: 100%;
+            &--first {
+                margin-top: 60px;
+            }
+            &--second {
+                margin-top: 90px;
+            }
+        }
+        &__box {
+            flex: 0 1 33.33%;
+            padding-top: 80px;
+            height: 400px;
+            text-align: center;
+            &--light {
+                background-image: linear-gradient(to bottom, #191c26 0%, rgba(25, 28, 38, 0) 100%);
+                .customers__images {
+                    background-color: #22242d;
+                }
+            }
+            &--dark {
+                background-image: linear-gradient(to bottom, #080a12 0%, rgba(8, 10, 18, 0) 100%);
+                .customers__images {
+                    background-color: #171920;
+                }
+            }
+        }
+        &__images {
+            margin: 0 auto 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 130px;
+            width: 130px;
+            border-radius: 50%;
+        }
+        &__title {
+            font-family: 'Poppins';
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 26px;
+            max-width: 160px;
+            margin: 0 auto;
+        }
+    }
+    .quote {
+        background-color: #191c26;
+        padding: 210px 0 219px;
+        position: relative;
+        &__number {
+            bottom: 70px;
+        }
+        &__title {
+            max-width: 414px;
+            margin: 30px 0;
+        }
+        &__text {
+            font-size: 18px;
+            line-height: 30.6px;
+            max-width: 555px;
+            margin-bottom: 65px;
+        }
+        &__form {
+            max-width: 555px;
+            &-input {
+                max-width: 262px;
+                width: 100%;
+                background-color: transparent;
+                border-bottom: 1px solid #3a3f50;
+                font-size: 18px;
+                line-height: 30.6px;
+                color: #5a5e6d;
+                &::placeholder {
+                    font-size: 18px;
+                    opacity: 0.5;
+                }
+                &:nth-child(2) {
+                    margin-left: 25px;
+                }
+            }
+            &-textarea {
+                margin-top: 35px;
+                background-color: transparent;
+                resize: none;
+                border-bottom: 1px solid #3a3f50;
+                font-size: 18px;
+                line-height: 30.6px;
+                color: #5a5e6d;
+                width: 100%;
+                height: 120px;
+                &::placeholder {
+                    font-size: 18px;
+                    opacity: 0.5;
+                }
+            }
+            &-btn {}
+        }
+    }
+}
